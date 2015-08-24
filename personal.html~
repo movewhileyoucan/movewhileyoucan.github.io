@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Move while you can! - Personal Training Duesseldorf</title>
+<meta name="description" content="English Personal Training in Duesseldorf. Outside in an area near you or in the comfort of your home. Have fun and get fit.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div class = "body">
+      <header class="mainheader">
+      <a href="index.php">   <img src="img/logo4.jpg"></a>
+       <nav><ul>
+	    <li "class='active'"><a href="index.php">Home</a></li>
+	    <li><a href="personal.html">Personal Training</a></li>
+	    <li><a href="group.html">Group Training</a></li>
+      <li><a href="classes.html">5€ Classes</a></li>
+	    <li><a href="form.html">PAR-Q Form</a></li>
+	    <li><a href="about.html">About Me</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+	    </ul></nav>
+      </header>
+      <div class="maincontent">
+<div class="content">
+	  <div class="leftcontent">
+	    <img style="margin-top:100px;" src="img/push.jpg">
+	    <content>
+		<h2>Personal Training</h2>
+		<p>
+Have you ever wanted to do 1 push-up? 20 push-ups? A chin up?<br>
+Whatever your goal is, you can achieve it with the right tools! Even if you have little to no experience, I will work with you on your own level and we will progress from there.
+let me transform your body into the body you were meant to have.
+If you're in the Dusseldorf area, I would love to train you! <br>
+<br>
+If you're looking to:<br>
+<ul style="padding-left:1em">
+<li>Burn fat
+<li>Build muscle
+<li>Increase your metabolism
+<li>Boost your confidence
+<li>Improve your posture
+</ul>
+<br>
+Register now and let's move! <br>
+
+<h3>Prices*:</h3><br>
+I believe personal training shouldn't only be a privilege for the rich and famous nor should being healthy have to cost you a fortune. That's why I'm offering prices that are affordable.<br>
+
+<h3>Come and go personal training option (no contract needed):</h3><br>
+45min personal training: 40 €  <br>
+<b>FIRST LESSON FREE! </b><br>
+<h3>Regular weekly personal training options (with 6 week contract):</h3><br>
+1X week: 35 € per week<br>
+2X week: 68 € per week<br>
+3X week: 100 € per week<br>
+4X week: 130 € per week<br>
+<small>*Please note that prices may vary depending on travelling distance </small> <br>
+
+
+<h3>What should I expect?</h3><br>
+After I get a better understanding of your lifestyle and training history, I will create a routine for you that is based on your goals and capabilities. The training will be outdoors and will last 45 minutes.  Be prepared to be pushed and to work hard.  I train no matter rain or shine. <br>
+
+<h3>Where does the training take place?</h3><br>
+I can recommend some good and central locations but I can also work with what suits you best. We can work in the area of your home or office, we just need open space in an outdoor environment.<br><br>
+<i>Housecalls:</i><br>
+Bad weather is a part of life, but it shouldn't stop us from working out. If you have enough space, it is possible to arrange the session in the comfort of your own home.<br>
+
+<h3>What to bring?</h3><br>
+A towel and water bottle 
+</p>
+	    </content>
+	  </div>
+      </div>
+
+      </div>
+
+
+<!--<div class="divider"></div>-->
+</div>
+    </div>
+  </body>
+      <footer class="mainfooter">
+   <div class="foot"><a href="index.php?s=i" style="color:#CCC">Impressum</a><!-- | &copy; 2014--></div>
+      </footer>
+</html>

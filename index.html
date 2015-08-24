@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Move while you can! - Personal Training Duesseldorf</title>
+<meta name="description" content="English Personal Training in Duesseldorf. Outside in an area near you or in the comfort of your home. Have fun and get fit.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div class = "body">
+      <header class="mainheader">
+      <a href="index.php">   <img src="img/logo4.jpg"></a>
+       <nav><ul>
+	    <li "class='active'"><a href="index.php">Home</a></li>
+	    <li><a href="personal.html">Personal Training</a></li>
+	    <li><a href="group.html">Group Training</a></li>
+      <li><a href="classes.html">5€ Classes</a></li>
+	    <li><a href="form.html">PAR-Q Form</a></li>
+	    <li><a href="about.html">About Me</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+	    </ul></nav>
+      </header>
+      <div class="maincontent">
+
+<script>(function(d, s, id) {
+	   var js, fjs = d.getElementsByTagName(s)[0];
+	   if (d.getElementById(id)) return;
+	   js = d.createElement(s); js.id = id;
+	   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=38555057613";
+	   fjs.parentNode.insertBefore(js, fjs);
+	 }(document, 'script', 'facebook-jssdk'));</script>
+
+<?php
+$quote = array("Leonora was my personal trainer for seven months. From the beginning she was very friendly which made the sessions very enjoyable. Her good sense of humor was accompanied by a great sense of responsibility as she was always prepared for our training sessions and knew which type of exercises I would benefit most from. I would strongly recommend Leonora as she is a caring and inspirational personal trainer.",
+"Leonora is a fun, easy-going person and training with her has been a really positive experience - I feel physically stronger, more health-conscious and also better able to harness my self-discipline and motivation. I always feel pushed and challenged without ever feeling out of my depth – Leonora is a very astute coach who is able to judge what each individual is capable of and ready for. I always leave feeling healthy and energized, which not only improves my physical well-being but also helps in other areas of my life. Great stuff, great value for money - definitely signing up for more!","I love training with Leonora! High intensity and tailored workouts, which you can even do right in your own living room – so there’s no excuse! Leonora’s a real expert, with a focus on proper form, good nutrition and hitting the right level of intensity for the best results. I can see and feel a big change after 3 months already, and the best part is it was enjoyable (burpees aside…)!  If you want to get fitter and stronger, and learn how to train properly, try this!","I loved training with Leonora for almost a year. First of all, she's an expert and knows her subject. She can adapt the exercices to the person and even with a knee injury I could do a session every week. We worked on different intensity and parts of the body.<br>
+It was a great experience. Then she's very friendly, smiling and she knows how to motivate people and push the limits exactly where we need to. Unfortunately we had to stop our sessions because I moved back home. Now I can do the exercices in my living room and use all her advices. I highly recommend her and if you still hesitate, have a trial session and you will be impressed by her work.","Thanks again for the excellent workout sessions, I loved them and I hope I get to do them again with you! I found them to be really effective - especially in terms of toning up and gaining energy and much needed motivation to continue. I have discovered that I much prefer this kind of exercise over running because it’s short, punchy, diverse and time just flies by! At the end of each workout I really feel like I have achieved something.");
+$name= array("Dr. Dunia Del Carpio","Tracey Slack","Asha Trotter","Anne Dubuc","Narelle Diedenhofen");
+$select=rand(0,count($name)-1);
+?>
+
+<div class="content">
+<h2>Why "move while you can" ?</h2>
+<p style="margin-bottom:2em;">
+Well, why the hell not? Our bodies were meant to move, run, jump, dance etc, so why are you just sitting there? I don't blame you, the problem is that today's life is very different from back in the days when were hunters and gatherers. Most of us now are sitting for over 8 hours a day, hunched back in our chairs  and staring at screens. It's no wonder that we have back pains, are constantly fatigued and don't know how to activate certain muscles (When is the last time you felt your glute muscles?).  Making even the smallest adjustment to your life can make all of the difference, for example elevators and escalators are all man made, try to avoid them when you can. Just move! I want to help you awaken your body and show you functional movements that will make your day to day life easier. We're all meant to be strong and active regardless of age, so move while you can.
+</p>
+
+
+<div class="bannercontainer">
+ <a href="index.php?s=p">
+  <span class="banner" style=" background: #6493d5;color:#FFF;">
+   <div class="text1">Personal Training</div>
+   <div class="text2">Contact me now and let's move!</div>
+  </span>
+ </a>
+ <a href="index.php?s=g">
+  <span class="banner" style=" background: #7A378B;color:#FFF;">
+   <div class="text1">Group Training</div>
+   <div class="text2">Bring your friends and let's work out together!</div>
+  </span>
+ </a>
+</div>
+
+<div class="quote">
+ <span style="font-size: 200%; line-height: 0.5">&ldquo;</span>
+ <span style="color:#444; font-size: 100%;"><?php echo "{$quote[$select]}";?></span>
+ <span style="font-size: 200%; line-height:0.5">&rdquo;</span>
+ <div style="font-style:normal; text-align:right">&mdash;
+  <?php echo "{$name[$select]}"; ?>
+ </div>
+ <style>
+ div[id="1"]{
+display:none;
+}
+input[value="1"]:checked ~ div[id="1"]{
+display:inline;
+}
+</style>
+<label for="morequotes">more...</label>
+ <input type="checkbox" name="hider" id="morequotes" value="1" style="display:none"><div id="1">
+ <?php if(1==1){for($i= 0; $i<count($name); $i++ ){
+ if($i!=$select){echo "<div style=\"padding-top=2em\"><span style=\"font-size: 200%; line-height: 0.5\">&ldquo; </span><span style=\"color:#444;font-size: 100%; \">$quote[$i]</span>
+ <span style=\"font-size: 200%; line-height:0.5\">&rdquo;</span></div>
+ <div style=\"margin-bottom:1em; font-style:normal; text-align:right\">&mdash; 
+  $name[$i]
+ </div>";}}}?></div>
+</div>
+
+
+
+<div style="overflow:hidden; float:left; width:100%"><div class="fb-like" data-href="https://www.facebook.com/Movewhileyoucan" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div></div>
+
+</div>
+
+
+<!--<div class="divider"></div>-->
+</div>
+    </div>
+  </body>
+      <footer class="mainfooter">
+   <div class="foot"><a href="index.php?s=i" style="color:#CCC">Impressum</a><!-- | &copy; 2014--></div>
+      </footer>
+</html>
