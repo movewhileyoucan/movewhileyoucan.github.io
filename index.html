@@ -32,13 +32,6 @@
 	   fjs.parentNode.insertBefore(js, fjs);
 	 }(document, 'script', 'facebook-jssdk'));</script>
 
-?php
-$quote = array("Leonora was my personal trainer for seven months. From the beginning she was very friendly which made the sessions very enjoyable. Her good sense of humor was accompanied by a great sense of responsibility as she was always prepared for our training sessions and knew which type of exercises I would benefit most from. I would strongly recommend Leonora as she is a caring and inspirational personal trainer.",
-"Leonora is a fun, easy-going person and training with her has been a really positive experience - I feel physically stronger, more health-conscious and also better able to harness my self-discipline and motivation. I always feel pushed and challenged without ever feeling out of my depth – Leonora is a very astute coach who is able to judge what each individual is capable of and ready for. I always leave feeling healthy and energized, which not only improves my physical well-being but also helps in other areas of my life. Great stuff, great value for money - definitely signing up for more!","I love training with Leonora! High intensity and tailored workouts, which you can even do right in your own living room – so there’s no excuse! Leonora’s a real expert, with a focus on proper form, good nutrition and hitting the right level of intensity for the best results. I can see and feel a big change after 3 months already, and the best part is it was enjoyable (burpees aside…)!  If you want to get fitter and stronger, and learn how to train properly, try this!","I loved training with Leonora for almost a year. First of all, she's an expert and knows her subject. She can adapt the exercices to the person and even with a knee injury I could do a session every week. We worked on different intensity and parts of the body.<br>
-It was a great experience. Then she's very friendly, smiling and she knows how to motivate people and push the limits exactly where we need to. Unfortunately we had to stop our sessions because I moved back home. Now I can do the exercices in my living room and use all her advices. I highly recommend her and if you still hesitate, have a trial session and you will be impressed by her work.","Thanks again for the excellent workout sessions, I loved them and I hope I get to do them again with you! I found them to be really effective - especially in terms of toning up and gaining energy and much needed motivation to continue. I have discovered that I much prefer this kind of exercise over running because it’s short, punchy, diverse and time just flies by! At the end of each workout I really feel like I have achieved something.");
-$name= array("Dr. Dunia Del Carpio","Tracey Slack","Asha Trotter","Anne Dubuc","Narelle Diedenhofen");
-$select=rand(0,count($name)-1);
-?>
 
 <div class="content">
 <h2>Why "move while you can" ?</h2>
@@ -64,9 +57,9 @@ Well, why the hell not? Our bodies were meant to move, run, jump, dance etc, so 
 
 <div class="quote">
  <span style="font-size: 200%; line-height: 0.5">&ldquo;</span>
- <span style="color:#444; font-size: 100%;"><?php echo "{$quote[$select]}";?></span>
+ <span style="color:#444; font-size: 100%;" id="initquote"></span>
  <span style="font-size: 200%; line-height:0.5">&rdquo;</span>
- <div style="font-style:normal; text-align:right">&mdash;
+ <div style="font-style:normal; text-align:right">&mdash;<p id="initname"></p>
   <?php echo "{$name[$select]}"; ?>
  </div>
  <style>
@@ -76,18 +69,14 @@ display:none;
 input[value="1"]:checked ~ div[id="1"]{
 display:inline;
 }
-</style>
+ </style>
+
 <label for="morequotes">more...</label>
- <input type="checkbox" name="hider" id="morequotes" value="1" style="display:none"><div id="1">
- <?php if(1==1){for($i= 0; $i<count($name); $i++ ){
- if($i!=$select){echo "<div style=\"padding-top=2em\"><span style=\"font-size: 200%; line-height: 0.5\">&ldquo; </span><span style=\"color:#444;font-size: 100%; \">$quote[$i]</span>
- <span style=\"font-size: 200%; line-height:0.5\">&rdquo;</span></div>
- <div style=\"margin-bottom:1em; font-style:normal; text-align:right\">&mdash; 
-  $name[$i]
- </div>";}}}?></div>
+<input type="checkbox" name="hider" id="morequotes" value="1" style="display:none">
+<div id="1">
+    <p id="quotes"> </p>
 </div>
-
-
+</div>
 
 <div style="overflow:hidden; float:left; width:100%"><div class="fb-like" data-href="https://www.facebook.com/Movewhileyoucan" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div></div>
 
@@ -102,3 +91,25 @@ display:inline;
    <div class="foot"><a href="impress.html" style="color:#CCC">Impressum</a><!-- | &copy; 2014--></div>
       </footer>
 </html>
+
+   <script> 
+        var names= ["Dr. Dunia Del Carpio","Tracey Slack","Asha Trotter","Anne Dubuc","Narelle Diedenhofen"];
+        var select=Math.floor((Math.random() * names.length));
+      var quote = [
+        "Leonora was my personal trainer for seven months. From the beginning she was very friendly which made the sessions very enjoyable. Her good sense of humor was accompanied by a great sense of responsibility as she was always prepared for our training sessions and knew which type of exercises I would benefit most from. I would strongly recommend Leonora as she is a caring and inspirational personal trainer.",
+        "Leonora is a fun, easy-going person and training with her has been a really positive experience - I feel physically stronger, more health-conscious and also better able to harness my self-discipline and  motivation. I always feel pushed and challenged without ever feeling out  of my depth – Leonora is a very astute coach who is able to judge what  each individual is capable of and ready for. I always leave feeling healthy and energized, which not only improves my physical well-being but also helps in other areas of my life. Great stuff, great value for money - definitely signing up for more!",
+        "I love training with Leonora! High intensity and tailored workouts, which you can even do right in  your own living room – so there’s no excuse! Leonora’s a real expert, with a focus on proper form, good nutrition and hitting the right level  of intensity for the best results. I can see and feel a big change after 3 months already, and the best part is it was enjoyable (burpees aside…)!  If you want to get fitter and stronger, and learn how to train  properly, try this!",
+        "I loved training with Leonora for almost a year. First of all, she's an expert and knows her subject. She can adapt the exercices to the person and even with a knee injury I could do a session every week. We worked on different intensity and parts of the body.<br> It was a great experience. Then she's very friendly, smiling and she knows how to motivate people and push the limits exactly where we need to. Unfortunately we had to stop our sessions because I moved back home. Now I can do the exercices in my living room and use all her advices. I highly recommend her and if you still hesitate, have a trial session and you will be impressed by her work.",
+        "Thanks again for the excellent workout sessions, I loved them and I hope I get to do them again with you! I found them to be really effective - especially in terms of toning up and gaining energy and much needed motivation to continue. I have discovered that I much prefer this kind of exercise over running because it’s short, punchy, diverse and time just flies by! At the end of each workout I really feel like I have achieved something."
+   ];
+
+   var prequote="<div style=\"padding-top=2em\"><span style=\"font-size: 200%; line-height: 0.5\">&ldquo; </span><span style=\"color:#444;font-size: 100%; \">";
+   var postquote="</span><span style=\"font-size: 200%; line-height:0.5\">&rdquo;</span></div><div style=\"margin-bottom:1em; font-style:normal; text-align:right\">&mdash;";
+   var postname="</div>";
+    document.getElementById("initname").innerHTML = names[select];
+    document.getElementById("initquote").innerHTML = quote[select];
+    var otherquotes="";
+    for(i=1; i<names.length; i++){ otherquotes+=prequote+quote[(select+i)%names.length]+postquote+names[(select+i)%names.length]+postname;}
+    document.getElementById("quotes").innerHTML = otherquotes;
+
+</script>
