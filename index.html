@@ -63,9 +63,30 @@ regardless of age, so move while you can.  </p>
  </a>
 </div>
 
+<div class="quote">
+  <span style="font-size: 200%; line-height: 0.5">&ldquo;</span>
+  <span style="color:#444; font-size: 100%;" id="initquote"></span>
+  <span style="font-size: 200%; line-height:0.5">&rdquo;</span>
+<div style="font-style:normal; text-align:right">
+  &mdash; <span id="initname"></span>
+  <?php echo "{$name[$select]}"; ?>
+</div>
+<style>
+div[id="1"]{
+display:none;
+}
+input[value="1"]:checked ~ div[id="1"]{
+display:inline;
+}
+</style>
+<label for="morequotes">more...</label>
+<input type="checkbox" name="hider" id="morequotes" value="1" style="display:none">
+<div id="1">
+  <p style="height:1em"> </p>
+  <p id="quotes"> </p>
+</div>
+</div>
 
-
-<div style="overflow:hidden; float:left; width:100%"><div class="fb-like" data-href="https://www.facebook.com/Movewhileyoucan" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div></div>
 
 </div>
 
