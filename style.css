@@ -225,9 +225,14 @@ footer {
 	width:50px;
 }
 .bannercontainer{
-	webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.3);
-	moz-box-shadow:	0px 0px 0px 0px rgba(50, 50, 50, 0.3);
-	box-shadow:	0px 0px 0px 0px rgba(50, 50, 50, 0.3);
+	width:auto;
+	align:center;
+	margin: 0em;
+	overflow:auto;
+	padding: 0.5em;
+	webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+	moz-box-shadow:	0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+	box-shadow:	0px 0px 6px 0px rgba(50, 50, 50, 0.3);
 	}
 
 .body{
