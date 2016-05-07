@@ -236,11 +236,11 @@ footer {
 @media all and	(max-device-width: 720px) {
 .body{
 	margin: 0 auto;
+font-size:200%
 	width: 100%;
 	clear: both;
 	}
 .bannercontainer{
 	width:90%;
-
 }
 
