@@ -9,11 +9,9 @@ int printFirstLinesOfFile(char* fileName, int numberOfLines){
     if((fp = fopen(fileName, "r"))){
       char line[255];
       for(int i = 0 ; i<numberOfLines; ++i){
-        fgets (line, 255, fp);
-        if( feof(fp) ) {
-          break;
+        if( fgets (line, 255, fp) ){
+          printf("%s",line);
         }
-        printf("%s",line);
       }
       fclose(fp);
     }
