@@ -1,0 +1,30 @@
+combine_signals(rank(x-shorttermavg(x)),rank(x-longtermavg(x)))
+
+close -> close*high/low
+
+delta replacement: delta(x*x)
+delta(SignedPower(x,2))
+delta(SignedPower(x,0.5)) == DeltaSqrt  #the best algo ever 
+delta(signedlog(x))
+x*delta(x)
+Abs(x)*delta(x)
+Roc(signedPower(x,2))
+
+2nd derivative algo:
+delta(delta(x,5),10)
+(1+Roc(x))/(1+Roc(x))
+delta(x*delta(x)   )
+x * delta(delta(x))
+secondDerivatives(x,5,10,delta1algo,delta2algo)
+DeltaSqrt(DeltaSqrt(x))
+delta(DeltaSqrt(x))
+
+
+
+NCRoc = delta(x,n)/(abs(delay(x,n))+1)
+    you can play with +1 : make it 0.5,0.1,10
+
+counting: i.e: #up_days-#down_days in last 3 days 
+
+delta(smooth(delta(x)))
+delta(delta(smooth(x)))
